@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Container {
+            float: left;
+            margin: auto;
+            width: 100%;
+            padding: 20px;
+            border: 2px solid grey;
+            overflow: auto;
+            margin-top: 20px;
+        }
+        .left {
+            float: left;
+            width: 65%;
+            display: flex;
+            flex-flow: row wrap;
+            margin-left: 2%;
+        }
+        .resim {
+            width: 33%;
+        }
+        .resim1 {
+            width: 33%;
+        }
+        .resim2 {
+            width: 33%;
+        }
+        .right {
+            float: left;
+            width: 30%;
+            height: 100%;
+            border: 2px solid gray;
+        }
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+            .resim2 {
+                visibility: hidden;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            .left {
+                width: 70%;
+            }
+            .resim {
+                width: 90%;
+            }
+            .resim1 {
+                width: 90%;
+            }
+            .resim2 {
+                width: 90%;
+            }
+            .right {
+                width: 30%;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 767px) {
+            .left {
+                width: 100%;
+            }
+            .resim {
+                width: 100%;
+            }
+            .resim1 {
+                width: 100%;
+            }
+            .resim2 {
+                width: 100%;
+            }
+            .right {
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <div class="left">
+            <div class="resim">
+                <img src="resim.jpg" alt="" width="90%">
+            </div>
+            <div class="resim">
+                <img src="resim.jpg" alt="" width="90%">
+            </div>
+            <div class="resim">
+                <img src="resim.jpg" alt="" width="90%">
+            </div>
+            <div class="resim1">
+                <img src="resim1.jpg" alt="" width="90%">
+            </div>
+            <div class="resim1">
+                <img src="resim1.jpg" alt="" width="90%">
+            </div>
+            <div class="resim1">
+                <img src="resim1.jpg" alt="" width="90%">
+            </div>
+            <div class="resim2">
+                <img src="resim2.jpg" alt="" width="90%">
+            </div>
+            <div class="resim2">
+                <img src="resim2.jpg" alt="" width="90%">
+            </div>
+            <div class="resim2">
+                <img src="resim2.jpg" alt="" width="90%">
+            </div>
+        </div>
+        <div class="right">
+            <div>
+                <img src="resim3.jpg" alt="" width="100%">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ex porro assumenda laboriosam eveniet repellendus voluptatem tempora omnis,
+                    labore quod expedita asperiores libero soluta, maiores earum explicabo,
+                    perferendis repudiandae! Iste magnam voluptatibus asperiores dolor ipsam. Asperiores fuga,
+                    nihil neque molestiae magnam voluptatum consequatur nesciunt vel? Est blanditiis reiciendis
+                    corrupti Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, eos. Lorem ipsum dolor
+                    sit amet consectetur, adipisicing elit. Est, dolorem neque blanditiis nihil error qui numquam ex
+                    ullam vero nisi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minima repellendus
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
